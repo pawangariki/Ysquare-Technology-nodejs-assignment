@@ -1,0 +1,28 @@
+GET http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBhd2FuZ2FyaWtpIiwiaWF0IjoxNjI0NjgxMjExfQ.98ljD3ACSo_V1SJZ__h3exB8NMRzKAnHiV4WlExp97s
+
+###
+
+GET http://localhost:3000/books/1/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "pawangariki",
+    "password": "pawan@737",
+    "gender":"male",
+    "location":"vijaywada"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "pawangariki",
+    "password": "pawan@737"
+}
